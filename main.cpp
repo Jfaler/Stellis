@@ -21,7 +21,7 @@ int main()
 {
 	srand((unsigned)time(0));
 
-	int theOdds[11][9]; //Array that holds 10 rows and 9 col
+	int theOdds[11][9]; 
 	int search = 0;
 	int row = 0;
 	int col = 0;
@@ -49,7 +49,7 @@ int main()
 
 	return 0;
 }
-void FillArray(int ar[][9], int size) // Create a void function call FillArray that will fill a 2D array with variable rows and nine columns with random odd numbers from 1 to 99.  Don’t assume the function will only be used to fill 10x9 tables.
+void FillArray(int ar[][9], int size) 
 {
 
 	for (int row = 0; row < size; row++) // row
@@ -75,7 +75,7 @@ void PrintArray(int ar[][9], int size, int &search)
 		cout << endl;
 	}
 }
-int FindNumber(int ar[][9], int size, int &search) // should take as arguments the number to search for, and the two dimensional array to search. You are going also to need something to fill with the the row and column coordinates of found matches. Use either one or two arrays to hold the coordinates, your choice.
+int FindNumber(int ar[][9], int size, int &search) 
 {
 	int count = 0;
 
